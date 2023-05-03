@@ -7,7 +7,7 @@ import "@/styles/globals.css";
 import { useEffect } from "react";
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   // 引入 Bootstrap 的程式碼檔案
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.js");
@@ -24,5 +24,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-export default MyApp;
