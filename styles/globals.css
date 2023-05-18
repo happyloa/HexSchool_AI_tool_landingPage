@@ -1,5 +1,5 @@
 /* 引入思源黑體 API */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 
 /* 將所有元素的字型設定成思源黑體，並讓文字以更平滑的方式來呈現 */
 *,
