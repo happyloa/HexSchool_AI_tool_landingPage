@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import NavBar from "../components/NavBar";
+
 export default function Pricing() {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Pricing() {
           content="2023 軟體工程師體驗營 AI 工具王定價頁"
         />
       </Head>
+      <NavBar />
       <main></main>
     </>
   );
