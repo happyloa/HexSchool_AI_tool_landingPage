@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import NavBar from "../components/NavBar";
 
-const DesktopHeroParagraph = styled.p`
+const DesktopHeroHeading = styled.h1`
   font-size: 120px;
   font-weight: 900;
   line-height: 144px;
@@ -18,7 +18,7 @@ const DesktopHeroParagraph = styled.p`
   }
 `;
 
-const MobileHeroParagraph = styled.p`
+const MobileHeroHeading = styled.h1`
   display: none;
   font-size: 48px;
   font-weight: 900;
@@ -151,7 +151,7 @@ export default function Home() {
       <NavBar />
       <main className="container p-0">
         {/* 桌面版文字 */}
-        <DesktopHeroParagraph>
+        <DesktopHeroHeading>
           透過
           <br />
           AI 工具王的
@@ -159,9 +159,9 @@ export default function Home() {
           強大模型
           <br />
           讓您的業務更聰明
-        </DesktopHeroParagraph>
+        </DesktopHeroHeading>
         {/* 手機版文字 */}
-        <MobileHeroParagraph className="mx-3">
+        <MobileHeroHeading className="mx-3">
           透過
           <br />
           AI 工具王的
@@ -171,7 +171,7 @@ export default function Home() {
           讓您的業務
           <br />
           更聰明
-        </MobileHeroParagraph>
+        </MobileHeroHeading>
         <Cta>開始使用</Cta>
         <GrassContainer className="overflow-hidden d-flex mx-3">
           <GrassOne src="/deco.png" alt="Grass1"></GrassOne>
