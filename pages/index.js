@@ -186,8 +186,8 @@ export default function Home() {
             包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
           </ServicesParagraph>
         </OurServices>
-        <FeatureDiv className="row mx-3">
-          <div className="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+        <FeatureDiv className="row g-3">
+          <div className="col-md-4 border border-light-subtle rounded-4 px-4 py-5">
             <Image
               src="/icons/flash on.png"
               alt="閃電 icon"
@@ -200,7 +200,7 @@ export default function Home() {
               我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
             </p>
           </div>
-          <div className="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+          <div className="col-md-4 border border-light-subtle rounded-4 px-4 py-5">
             <Image
               src="/icons/auto awesome.png"
               alt="星星 icon"
@@ -213,7 +213,7 @@ export default function Home() {
               我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
             </p>
           </div>
-          <div className="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+          <div className="col-md-4 border border-light-subtle rounded-4 px-4 py-5">
             <Image
               src="/icons/library add.png"
               alt="新增 icon"
