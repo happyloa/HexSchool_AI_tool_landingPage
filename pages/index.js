@@ -116,7 +116,7 @@ const ServicesParagraph = styled.p`
   }
 `;
 
-const FeatureDiv = styled.div`
+const Feature = styled.section`
   margin: 0 0 160px;
   @media (max-width: 768px) {
     margin: 0 0 120px;
@@ -136,6 +136,16 @@ const PartnersHeading = styled.h2`
   @media (max-width: 768px) {
     margin: 0 0 24px;
   }
+`;
+
+const DesktopTestimonial = styled.section`
+  margin: 0 0 160px;
+`;
+const TestimonialDiv = styled.div`
+  background-color: #121212;
+`;
+const TestimonialP = styled.p`
+  height: 215px;
 `;
 
 export default function Home() {
@@ -186,45 +196,53 @@ export default function Home() {
             包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
           </ServicesParagraph>
         </OurServices>
-        <FeatureDiv className="row g-3">
-          <div className="col-md-4 border border-light-subtle rounded-4 px-4 py-5">
-            <Image
-              src="/icons/flash on.png"
-              alt="閃電 icon"
-              className="mb-3"
-              width={80}
-              height={80}
-            />
-            <h3 className="fw-bolder mb-3">快速</h3>
-            <p>
-              我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
-            </p>
+        <Feature className="row g-4">
+          <div className="col-md-4">
+            <div className="border border-light-subtle rounded-4 px-4 py-5">
+              <Image
+                src="/icons/flash on.png"
+                alt="閃電 icon"
+                className="mb-3"
+                width={80}
+                height={80}
+              />
+              <h3 className="fw-bolder mb-3">快速</h3>
+              <p>
+                我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
+              </p>
+            </div>
           </div>
-          <div className="col-md-4 border border-light-subtle rounded-4 px-4 py-5">
-            <Image
-              src="/icons/auto awesome.png"
-              alt="星星 icon"
-              className="mb-3"
-              width={80}
-              height={80}
-            />
-            <h3 className="fw-bolder mb-3">靈活</h3>
-            <p>
-              我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
-            </p>
+          <div className="col-md-4">
+            <div className="border border-light-subtle rounded-4 px-4 py-5">
+              <Image
+                src="/icons/auto awesome.png"
+                alt="星星 icon"
+                className="mb-3"
+                width={80}
+                height={80}
+              />
+              <h3 className="fw-bolder mb-3">靈活</h3>
+              <p>
+                我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
+              </p>
+            </div>
           </div>
-          <div className="col-md-4 border border-light-subtle rounded-4 px-4 py-5">
-            <Image
-              src="/icons/library add.png"
-              alt="新增 icon"
-              className="mb-3"
-              width={80}
-              height={80}
-            />
-            <h3 className="fw-bolder mb-3">擴充</h3>
-            <p>我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
+          <div className="col-md-4">
+            <div className="border border-light-subtle rounded-4 px-4 py-5">
+              <Image
+                src="/icons/library add.png"
+                alt="新增 icon"
+                className="mb-3"
+                width={80}
+                height={80}
+              />
+              <h3 className="fw-bolder mb-3">擴充</h3>
+              <p>
+                我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。
+              </p>
+            </div>
           </div>
-        </FeatureDiv>
+        </Feature>
         <Partners className="mx-3">
           <PartnersHeading>來自合作夥伴</PartnersHeading>
           <Marquee className="d-flex mb-4">
@@ -244,6 +262,189 @@ export default function Home() {
             <img src="/enterprise12.png" className="mx-2 img-fluid" />
           </Marquee>
         </Partners>
+        <DesktopTestimonial className="d-none d-md-flex row g-4">
+          <div className="col-md-4">
+            <TestimonialDiv className="rounded-4 p-5">
+              <div className="d-flex">
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+              </div>
+              <TestimonialP>
+                非常喜歡 AI工具王 提供的 AI
+                模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王
+                提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！
+              </TestimonialP>
+              <div className="d-flex">
+                <Image
+                  src="/avatar3.png"
+                  alt="見證者照片"
+                  className="me-3"
+                  width={48}
+                  height={48}
+                />
+                <div>
+                  <h6 className="fw-bold">陳小姐</h6>
+                  <span>ABC科技有限公司</span>
+                </div>
+              </div>
+            </TestimonialDiv>
+          </div>
+          <div className="col-md-4">
+            <TestimonialDiv className="rounded-4 p-5">
+              <div className="d-flex">
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+              </div>
+              <TestimonialP>
+                作為一家醫療器材公司，我們非常關注人工智能技術的應用，而
+                AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用
+                AI工具王
+                的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝
+                AI工具王 團隊的辛勤工作！
+              </TestimonialP>
+              <div className="d-flex">
+                <Image
+                  src="/avatar1.png"
+                  alt="見證者照片"
+                  className="me-3"
+                  width={48}
+                  height={48}
+                />
+                <div>
+                  <h6 className="fw-bold">劉小姐</h6>
+                  <span>XYZ 醫療器材有限公司</span>
+                </div>
+              </div>
+            </TestimonialDiv>
+          </div>
+          <div className="col-md-4">
+            <TestimonialDiv className="rounded-4 p-5">
+              <div className="d-flex">
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  src="/icons/star.png"
+                  alt="星星 icon"
+                  className="me-1 mb-4"
+                  width={16}
+                  height={16}
+                />
+              </div>
+              <TestimonialP>
+                我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而
+                AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用
+                AI工具王
+                的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝
+                AI工具王 團隊的支持！
+              </TestimonialP>
+              <div className="d-flex">
+                <Image
+                  src="/avatar2.png"
+                  alt="見證者照片"
+                  className="me-3"
+                  width={48}
+                  height={48}
+                />
+                <div>
+                  <h6 className="fw-bold">黃先生</h6>
+                  <span>EFG 銀行</span>
+                </div>
+              </div>
+            </TestimonialDiv>
+          </div>
+        </DesktopTestimonial>
       </main>
     </>
   );
