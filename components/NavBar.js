@@ -5,10 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Nav = styled.nav`
+  background-color: #00000080;
+  backdrop-filter: blur(7px);
   margin-bottom: 40px;
-  @media (max-width: 768px) {
-    margin: 0 10px;
-  }
 `;
 
 const DivContainer = styled.div`
@@ -18,7 +17,7 @@ const DivContainer = styled.div`
 
 export default function NavBar() {
   return (
-    <Nav className="navbar sticky-top">
+    <Nav className="navbar sticky-top mx-3">
       <DivContainer className="container">
         <Link className="navbar-brand" href="/">
           <Image src="/logo.png" alt="AI 工具王" width={225} height={40} />
