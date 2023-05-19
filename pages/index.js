@@ -2,6 +2,7 @@
 import styled, { keyframes } from "styled-components";
 
 import Head from "next/head";
+import Image from "next/image";
 
 import NavBar from "../components/NavBar";
 
@@ -40,6 +41,9 @@ const Cta = styled.button`
     border-radius: 32px;
     color: #000;
     transform: translateX(25px);
+  }
+  @media (max-width: 768px) {
+    margin: 0 1em 180px;
   }
 `;
 
@@ -91,6 +95,32 @@ const GrassThree = styled.img`
   }
 `;
 
+const OurServices = styled.section`
+  margin: 0 0 80px;
+  @media (max-width: 768px) {
+    margin: 0 0 48px;
+  }
+`;
+
+const ServicesParagraph = styled.p`
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+  width: 66%;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 38.4px;
+    width: 100%;
+  }
+`;
+
+const FeatureDiv = styled.div`
+  margin: 0 0 160px;
+  @media (max-width: 768px) {
+    margin: 0 0 120px;
+  }
+`;
+
 export default function Home() {
   return (
     <>
@@ -125,14 +155,59 @@ export default function Home() {
           <br />
           更聰明
         </MobileHeroParagraph>
-        <Cta type="button" class="btn btn-dark mx-3">
-          開始使用
-        </Cta>
+        <Cta>開始使用</Cta>
         <GrassContainer className="overflow-hidden d-flex mx-3">
           <GrassOne src="/deco.png" alt="Grass1"></GrassOne>
           <GrassTwo src="/deco.png" alt="Grass2"></GrassTwo>
           <GrassThree src="/deco.png" alt="Grass3"></GrassThree>
         </GrassContainer>
+        <OurServices className="d-md-flex justify-content-between mx-3">
+          <h2 className="mb-5">我們的服務</h2>
+          <ServicesParagraph>
+            我們相信透過 AI 技術，
+            <br />
+            包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
+          </ServicesParagraph>
+        </OurServices>
+        <FeatureDiv class="row mx-3">
+          <div class="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+            <Image
+              src="/icons/flash on.png"
+              alt="閃電 icon"
+              className="mb-3"
+              width={80}
+              height={80}
+            />
+            <h3 className="fw-bolder mb-3">快速</h3>
+            <p>
+              我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
+            </p>
+          </div>
+          <div class="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+            <Image
+              src="/icons/auto awesome.png"
+              alt="星星 icon"
+              className="mb-3"
+              width={80}
+              height={80}
+            />
+            <h3 className="fw-bolder mb-3">靈活</h3>
+            <p>
+              我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
+            </p>
+          </div>
+          <div class="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+            <Image
+              src="/icons/library add.png"
+              alt="新增 icon"
+              className="mb-3"
+              width={80}
+              height={80}
+            />
+            <h3 className="fw-bolder mb-3">擴充</h3>
+            <p>我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
+          </div>
+        </FeatureDiv>
       </main>
     </>
   );
