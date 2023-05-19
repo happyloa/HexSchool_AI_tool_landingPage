@@ -1,5 +1,7 @@
 // 引入 Styled Components 套件
 import styled, { keyframes } from "styled-components";
+// 引入 React Fast Marquee 套件
+import Marquee from "react-fast-marquee";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -121,6 +123,21 @@ const FeatureDiv = styled.div`
   }
 `;
 
+const Partners = styled.section`
+  margin: 0 0 160px;
+  @media (max-width: 768px) {
+    margin: 0 0 48px;
+  }
+`;
+
+const PartnersHeading = styled.h2`
+  font-weight: 900;
+  margin: 0 0 80px;
+  @media (max-width: 768px) {
+    margin: 0 0 24px;
+  }
+`;
+
 export default function Home() {
   return (
     <>
@@ -169,8 +186,8 @@ export default function Home() {
             包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
           </ServicesParagraph>
         </OurServices>
-        <FeatureDiv class="row mx-3">
-          <div class="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+        <FeatureDiv className="row mx-3">
+          <div className="col border border-light-subtle rounded-4 px-4 py-5 m-3">
             <Image
               src="/icons/flash on.png"
               alt="閃電 icon"
@@ -183,7 +200,7 @@ export default function Home() {
               我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
             </p>
           </div>
-          <div class="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+          <div className="col border border-light-subtle rounded-4 px-4 py-5 m-3">
             <Image
               src="/icons/auto awesome.png"
               alt="星星 icon"
@@ -196,7 +213,7 @@ export default function Home() {
               我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
             </p>
           </div>
-          <div class="col border border-light-subtle rounded-4 px-4 py-5 m-3">
+          <div className="col border border-light-subtle rounded-4 px-4 py-5 m-3">
             <Image
               src="/icons/library add.png"
               alt="新增 icon"
@@ -208,6 +225,25 @@ export default function Home() {
             <p>我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
           </div>
         </FeatureDiv>
+        <Partners className="mx-3">
+          <PartnersHeading>來自合作夥伴</PartnersHeading>
+          <Marquee className="d-flex mb-4">
+            <img src="/enterprise.png" className="mx-2 img-fluid" />
+            <img src="/enterprise1.png" className="mx-2 img-fluid" />
+            <img src="/enterprise2.png" className="mx-2 img-fluid" />
+            <img src="/enterprise3.png" className="mx-2 img-fluid" />
+            <img src="/enterprise4.png" className="mx-2 img-fluid" />
+            <img src="/enterprise5.png" className="mx-2 img-fluid" />
+          </Marquee>
+          <Marquee className="d-flex" direction="right">
+            <img src="/enterprise6.png" className="mx-2 img-fluid" />
+            <img src="/enterprise7.png" className="mx-2 img-fluid" />
+            <img src="/enterprise8.png" className="mx-2 img-fluid" />
+            <img src="/enterprise9.png" className="mx-2 img-fluid" />
+            <img src="/enterprise11.png" className="mx-2 img-fluid" />
+            <img src="/enterprise12.png" className="mx-2 img-fluid" />
+          </Marquee>
+        </Partners>
       </main>
     </>
   );
