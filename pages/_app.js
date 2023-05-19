@@ -1,5 +1,8 @@
 // 引入 Bootstrap 的樣式檔案
 import "bootstrap/dist/css/bootstrap.css";
+// 引入 React Slick 的樣式檔案
+import "~slick-carousel/slick/slick.css";
+import "~slick-carousel/slick/slick-theme.css";
 
 // 引入全域樣式
 import "@/styles/globals.css";
