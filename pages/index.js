@@ -9,6 +9,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import NavBar from "../components/NavBar";
+import ComeFromAI from "../components/ComeFromAI";
 
 const DesktopHeroHeading = styled.h1`
   font-size: 120px;
@@ -175,7 +176,7 @@ export default function Home() {
         />
       </Head>
       <NavBar />
-      <main className="container p-0">
+      <div className="container p-0">
         {/* 桌面版文字 */}
         <DesktopHeroHeading>
           透過
@@ -640,7 +641,8 @@ export default function Home() {
             </TestimonialDiv>
           </Slider>
         </MobileTestimonial>
-      </main>
+      </div>
+      <ComeFromAI />
     </>
   );
 }
