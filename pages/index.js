@@ -179,7 +179,7 @@ export default function Home() {
       <div className="container p-0">
         {/* 桌面版文字 */}
         <DesktopHeroHeading>
-          透過
+          透過12345
           <br />
           AI 工具王的
           <br />
@@ -262,7 +262,11 @@ export default function Home() {
         </Feature>
         <Partners className="mx-3">
           <PartnersHeading>來自合作夥伴</PartnersHeading>
-          <Marquee className="d-flex mb-4">
+          <Marquee
+            className="d-flex mb-4"
+            gradient="true"
+            gradientColor={[0, 0, 0]}
+            gradientWidth="100px">
             <img src="/enterprise.png" className="mx-2 img-fluid" />
             <img src="/enterprise1.png" className="mx-2 img-fluid" />
             <img src="/enterprise2.png" className="mx-2 img-fluid" />
@@ -270,7 +274,12 @@ export default function Home() {
             <img src="/enterprise4.png" className="mx-2 img-fluid" />
             <img src="/enterprise5.png" className="mx-2 img-fluid" />
           </Marquee>
-          <Marquee className="d-flex" direction="right">
+          <Marquee
+            className="d-flex"
+            direction="right"
+            gradient="true"
+            gradientColor={[0, 0, 0]}
+            gradientWidth="100px">
             <img src="/enterprise6.png" className="mx-2 img-fluid" />
             <img src="/enterprise7.png" className="mx-2 img-fluid" />
             <img src="/enterprise8.png" className="mx-2 img-fluid" />
