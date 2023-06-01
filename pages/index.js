@@ -179,7 +179,7 @@ export default function Home() {
       <div className="container p-0">
         {/* 桌面版文字 */}
         <DesktopHeroHeading>
-          透過12345
+          透過
           <br />
           AI 工具王的
           <br />
